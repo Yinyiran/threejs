@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import ThreeDemo from '../views/ThreeDemo.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,9 +6,15 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: ThreeDemo
+      component: () => import('@/views/index.vue'),
+      meta: { title: '3D旋转盒子' }
     },
-
+    {
+      path: '/line',
+      name: 'line',
+      component: () => import('@/views/line.vue'),
+      meta: { title: '线' }
+    }
   ]
 })
 
