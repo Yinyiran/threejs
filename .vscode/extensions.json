@@ -2,7 +2,6 @@
   "recommendations": [
     "Vue.volar",
     "PKief.material-icon-theme",
-    "akamud.vscode-theme-onedark",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "Vue.vscode-typescript-vue-plugin",
