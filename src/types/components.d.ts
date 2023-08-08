@@ -16,5 +16,6 @@ declare module 'vue' {
     RotateBox: typeof import('./../views/rotate-box.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Text: typeof import('./../views/text.vue')['default']
   }
 }

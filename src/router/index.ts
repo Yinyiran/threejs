@@ -6,21 +6,27 @@ const router = createRouter({
     {
       path: '/',
       name: 'index',
-      redirect: 'rotate-box'
+      redirect: 'rotate-box',
     },
     {
       path: '/rotate-box',
       name: 'rotate-box',
       component: () => import('@/views/rotate-box.vue'),
-      meta: { title: '3D旋转盒子' }
+      meta: { title: '3D旋转盒子' },
     },
     {
       path: '/line',
       name: 'line',
       component: () => import('@/views/line.vue'),
-      meta: { title: '线' }
-    }
-  ]
+      meta: { title: '线' },
+    },
+    {
+      path: '/text',
+      name: 'text',
+      component: () => import('@/views/text.vue'),
+      meta: { title: '文字' },
+    },
+  ],
 })
 
 export default router
