@@ -1,13 +1,16 @@
 <template>
   <div class="index">
     <div id="box"></div>
+    <i-carbon-accessibility />
+    <i-ant-design-alert-filled />
+    <i-ant-design-audio-filled />
+    <i-ep-chat-dot-square />
     <button @click="startTimer">旋转</button>
     <button @click="stopTimer">停止</button>
   </div>
 </template>
 <script setup lang="ts">
 import * as THREE from 'three'
-import { onMounted } from 'vue'
 
 const scene = new THREE.Scene()
 const camera = new THREE.PerspectiveCamera(90, 1, 0.1, 1000)

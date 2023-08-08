@@ -5,8 +5,13 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('@/views/index.vue'),
+      name: 'index',
+      redirect: 'rotate-box'
+    },
+    {
+      path: '/rotate-box',
+      name: 'rotate-box',
+      component: () => import('@/views/rotate-box.vue'),
       meta: { title: '3D旋转盒子' }
     },
     {
